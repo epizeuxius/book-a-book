@@ -18,6 +18,8 @@ router.post('/addBook', function(req, res){
   }
 	var title = req.body.title;
 	var author = req.body.author;
+  var Owner = req.user.id;
+
 	// Validation
 	req.checkBody('title', 'Name is required').notEmpty();
 	req.checkBody('author', 'Email is required').notEmpty();
@@ -31,7 +33,8 @@ router.post('/addBook', function(req, res){
 	} else {
 		var newBook = new Book({
 			Title: title,
-			Author: author
+			Author: author,
+      Owner: Owner
 		});
 
 		newBook.save(function(){

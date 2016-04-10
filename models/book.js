@@ -47,7 +47,7 @@ module.exports.getBookbyAuthor=function(author,callback){
 	Book.find(query,callback);
 }
 
-module.exports.getBookbyUser=function(username,callback){
-	var query = {Owner:username}
+module.exports.getBookbyUser=function(user,callback){
+	var query = {Owner:user.id}
 	Book.find(query,callback);
 }

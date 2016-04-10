@@ -23,6 +23,7 @@
     "mongodb": "*",
     "mongoose": "*",
     "morgan": "^1.7.0",
+    "nodemon": "^1.9.1",
     "passport": "*",
     "passport-http": "*",
     "passport-local": "*"

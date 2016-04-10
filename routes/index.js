@@ -9,7 +9,9 @@ router.get('/', ensureAuthenticated, function(req, res){
 });
 
 router.get('/me',ensureAuthenticated, function(req, res){
-  res.status(200).json(req.user);
+	Book.getBookbyUser(req.user, function(err, books){
+		res.status(200).json(books);
+	})
 });
 
 function ensureAuthenticated(req, res, next){

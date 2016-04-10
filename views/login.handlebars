@@ -1,4 +1,44 @@
-<h2 class="page-header">Account Login</h2>
+<div class="container-fluid">
+  <div class="login">
+<div class = "well container col-sm-9" id:"login">
+
+<h2 class = "text-left">Login</h2>
+<br>
+<form role = "form" action="/users/login" method='post' autocomplete="on">
+
+<div class = "form-group row">
+<label class = "col-sm-3 form-control-label">Username</label>
+<div class  = "col-sm-9">
+<input type = "text" name="username" id = "username" placeholder="username" required="" class = "form-control">
+</div>
+</div>
+
+<div class = "form-group row">
+<label class = "col-sm-3 form-control-label">Password</label>
+<div class = "col-sm-9">
+<input type = "password" name = "password" id = "pass" placeholder="********" required="" class = "form-control">
+</div>
+</div>
+
+<div class = "row">
+<div class = "col-sm-12" align = "right">
+<a href="signup.html">Forgot Password?</a>
+</div>
+</div>
+
+<div class = "row">
+<div class = "col-sm-12" align = "right">
+<input type = "submit" name = "login" value = "Sign In" class = "btn btn-info">
+</div>
+</div>
+
+
+</form>
+</div>
+</div>
+</div>
+
+<!-- <h2 class="page-header">Account Login</h2>
 <form method="post" action="/users/login">
   <div class="form-group">
     <label>Username</label>
@@ -9,4 +49,4 @@
     <input type="password" class="form-control" name="password" placeholder="Password">
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
-</form>
+</form> -->
